@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toolBar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/toolbar_background"
+        android:gravity="center"
+        android:padding="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/red_color_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/red_background"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <ImageButton
+            android:id="@+id/blue_color_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_background"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <ImageButton
+            android:id="@+id/black_color_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/black_background"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <ImageButton
+            android:id="@+id/clear_color_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/white_background"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/drawing_canvas_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar_id"
+        android:background="#FBF1F1"
+        >
+
+        <include layout="@layout/paint_view"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
